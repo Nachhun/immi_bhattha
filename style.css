@@ -152,11 +152,11 @@ body {
   z-index: 2;
 }
 
-/* ROMANTIC MINI HEART CORNER ORNAMENTS (ELEGANT VECTOR STYLE) */
+/* ROMANTIC MULTI-HEART CORNER ORNAMENTS (ELEGANT VECTOR STYLE) */
 .corner-heart {
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
   pointer-events: none;
   z-index: 4;
   display: flex;
@@ -171,25 +171,25 @@ body {
 }
 
 .corner-tl {
-  top: 10px;
-  left: 10px;
+  top: 9px;
+  left: 9px;
 }
 
 .corner-tr {
-  top: 10px;
-  right: 10px;
+  top: 9px;
+  right: 9px;
   transform: scaleX(-1);
 }
 
 .corner-bl {
-  bottom: 10px;
-  left: 10px;
+  bottom: 9px;
+  left: 9px;
   transform: scaleY(-1);
 }
 
 .corner-br {
-  bottom: 10px;
-  right: 10px;
+  bottom: 9px;
+  right: 9px;
   transform: scale(-1, -1);
 }
 

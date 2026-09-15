@@ -1,3 +1,4 @@
 node_modules/
 optimize.mjs
 *-opt.jpg
+.vercel/
