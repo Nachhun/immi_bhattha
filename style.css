@@ -152,40 +152,44 @@ body {
   z-index: 2;
 }
 
-/* REAL WATERCOLOR FLORAL CORNERS WITH SEAMLESS BLENDING */
-.floral-corner-img {
+/* ROMANTIC MINI HEART CORNER ORNAMENTS (ELEGANT VECTOR STYLE) */
+.corner-heart {
   position: absolute;
-  width: 140px;
-  height: 140px;
-  object-fit: contain;
+  width: 30px;
+  height: 30px;
   pointer-events: none;
   z-index: 4;
-  mix-blend-mode: multiply;
-  filter: contrast(130%) brightness(104%);
-  -webkit-mask-image: radial-gradient(circle at 0% 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 86%);
-  mask-image: radial-gradient(circle at 0% 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 86%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.corner-heart svg {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .corner-tl {
-  top: 0;
-  left: 0;
+  top: 10px;
+  left: 10px;
 }
 
 .corner-tr {
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 10px;
   transform: scaleX(-1);
 }
 
 .corner-bl {
-  bottom: 0;
-  left: 0;
+  bottom: 10px;
+  left: 10px;
   transform: scaleY(-1);
 }
 
 .corner-br {
-  bottom: 0;
-  right: 0;
+  bottom: 10px;
+  right: 10px;
   transform: scale(-1, -1);
 }
 
@@ -687,9 +691,11 @@ body {
 
 .closing-script {
   font-family: var(--font-calligraphy);
-  font-size: 1.85rem;
+  font-size: 1.55rem;
   color: var(--burgundy-main);
-  margin-top: 14px;
+  margin: 14px auto 0;
+  max-width: 320px;
+  line-height: 1.35;
   position: relative;
   z-index: 5;
 }
@@ -744,28 +750,20 @@ body {
   color: var(--text-muted);
 }
 
-/* Couple Photo in Attire Section (0O0A0947.JPG) */
-.attire-photo-wrapper {
+/* Attire Illustration (immi.pdf Style) */
+.attire-illustration-wrapper {
   position: relative;
-  margin: 12px auto 16px;
-  max-width: 380px;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 8px 24px rgba(67, 5, 15, 0.12);
-  border: 1px solid rgba(203, 162, 67, 0.45);
+  margin: 8px auto 14px;
+  max-width: 250px;
   z-index: 5;
 }
 
-.attire-photo {
+.attire-illustration {
   width: 100%;
   height: auto;
   display: block;
-  object-fit: cover;
-  transition: transform 0.8s ease;
-}
-
-.attire-photo-wrapper:hover .attire-photo {
-  transform: scale(1.03);
+  mix-blend-mode: multiply;
+  filter: contrast(106%);
 }
 
 .attire-quote-box {
@@ -1126,4 +1124,180 @@ body {
   letter-spacing: 3px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.75);
+}
+
+/* ==========================================================================
+   RESPONSIVE MOBILE TYPOGRAPHY & LAYOUT OPTIMIZATION (max-width: 480px)
+   ========================================================================== */
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
+  .app-wrapper {
+    padding: 8px 6px 30px;
+  }
+
+  .section-block {
+    padding: 24px 14px 44px;
+  }
+
+  /* Decorative Floral Corners - Scaled down so they don't cover text */
+  .floral-corner-img {
+    width: 88px;
+    height: 88px;
+  }
+
+  /* Hero Section */
+  .hero-banner-top {
+    padding: 26px 14px 18px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.68rem;
+    letter-spacing: 3px;
+  }
+
+  .hero-names {
+    font-size: 2.35rem;
+    margin: 4px 0 10px;
+  }
+
+  .hero-date-loc {
+    font-size: 0.68rem;
+    letter-spacing: 2.2px;
+  }
+
+  .hero-quote {
+    font-size: 1.35rem;
+  }
+
+  /* Invitation Section */
+  .together-title {
+    font-size: 2.3rem;
+  }
+
+  .families-subtitle {
+    font-size: 0.68rem;
+    letter-spacing: 3px;
+  }
+
+  .parents-section {
+    gap: 8px;
+    margin: 12px 0;
+  }
+
+  .parents-label {
+    font-size: 0.62rem;
+    letter-spacing: 1.5px;
+  }
+
+  .parents-names {
+    font-size: 0.85rem;
+    line-height: 1.45;
+  }
+
+  .invite-text {
+    font-size: 0.68rem;
+    letter-spacing: 2.5px;
+    margin: 14px 0 10px;
+  }
+
+  .name-script {
+    font-size: 1.45rem;
+  }
+
+  .event-day {
+    font-size: 1.25rem;
+  }
+
+  .event-full-date {
+    font-size: 0.72rem;
+    letter-spacing: 2.5px;
+  }
+
+  /* Attire Section */
+  .attire-header-title {
+    font-size: 0.95rem;
+    letter-spacing: 2.8px;
+  }
+
+  .attire-script-subtitle {
+    font-size: 1.85rem;
+    margin-bottom: 12px;
+  }
+
+  .attire-categories-bar {
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+
+  .attire-cat-col h4 {
+    font-size: 0.76rem;
+    letter-spacing: 2px;
+  }
+
+  .attire-cat-col p {
+    font-size: 0.84rem;
+  }
+
+  .attire-illustration-wrapper {
+    max-width: 200px;
+    margin: 6px auto 10px;
+  }
+
+  .attire-quote-text {
+    font-size: 0.92rem;
+    line-height: 1.45;
+  }
+
+  .all-colours-title {
+    font-size: 0.76rem;
+    letter-spacing: 2.2px;
+  }
+
+  .avoid-text {
+    font-size: 0.82rem;
+  }
+
+  .closing-script {
+    font-size: 1.25rem !important;
+    max-width: 270px;
+    margin: 10px auto 0;
+    padding: 0 8px;
+    line-height: 1.35;
+  }
+
+  /* FAQ Section */
+  .details-header-title {
+    font-size: 0.95rem;
+    letter-spacing: 2.8px;
+  }
+
+  .faq-script-subtitle {
+    font-size: 1.75rem;
+    margin-bottom: 14px;
+  }
+
+  .faq-question {
+    font-size: 0.82rem;
+  }
+
+  .faq-content-inner {
+    font-size: 0.82rem;
+  }
+
+  /* Closing Section */
+  .last-quote {
+    font-size: 1.6rem;
+  }
+
+  .last-signature-names {
+    font-size: 1.95rem;
+  }
+
+  .last-signature-text {
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+  }
 }
