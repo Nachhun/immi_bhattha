@@ -152,11 +152,11 @@ body {
   z-index: 2;
 }
 
-/* ROMANTIC MULTI-HEART CORNER ORNAMENTS (ELEGANT VECTOR STYLE) */
+/* ROMANTIC MULTI-HEART CORNER ORNAMENTS (ELEGANT LUXURY MOTIF) */
 .corner-heart {
   position: absolute;
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
   pointer-events: none;
   z-index: 4;
   display: flex;
@@ -171,25 +171,25 @@ body {
 }
 
 .corner-tl {
-  top: 9px;
-  left: 9px;
+  top: 10px;
+  left: 10px;
 }
 
 .corner-tr {
-  top: 9px;
-  right: 9px;
+  top: 10px;
+  right: 10px;
   transform: scaleX(-1);
 }
 
 .corner-bl {
-  bottom: 9px;
-  left: 9px;
+  bottom: 10px;
+  left: 10px;
   transform: scaleY(-1);
 }
 
 .corner-br {
-  bottom: 9px;
-  right: 9px;
+  bottom: 10px;
+  right: 10px;
   transform: scale(-1, -1);
 }
 
@@ -1142,10 +1142,10 @@ body {
     padding: 24px 14px 44px;
   }
 
-  /* Decorative Floral Corners - Scaled down so they don't cover text */
-  .floral-corner-img {
-    width: 88px;
-    height: 88px;
+  /* Decorative Multi-Heart Corners */
+  .corner-heart {
+    width: 36px;
+    height: 36px;
   }
 
   /* Hero Section */
