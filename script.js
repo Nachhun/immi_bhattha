@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
    1. COUNTDOWN TIMER
    -------------------------------------------------------------------------- */
 function initCountdown() {
-  // Wedding Date: 22 November 2026 at 10:30 AM (NZDT, UTC+13)
-  const targetDate = new Date('2026-11-22T10:30:00+13:00').getTime();
+  // Wedding Date: 22 November 2026 at 10:30 AM (AEDT, UTC+11)
+  const targetDate = new Date('2026-11-22T10:30:00+11:00').getTime();
 
   const daysEl = document.getElementById('cd-days');
   const hoursEl = document.getElementById('cd-hours');
@@ -94,8 +94,8 @@ function initCalendarEvent() {
       'Dress code: Formal / Semi-Formal (Burgundy theme, avoid white/ivory).'
     );
     const location = encodeURIComponent('Jolly Seafood Restaurant, Christchurch, New Zealand');
-    // Start: 2026-11-22 10:30 NZDT -> UTC 2026-11-21 21:30
-    const gcalUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=20261121T213000Z/20261122T103000Z&details=${details}&location=${location}`;
+    // Start: 2026-11-22 10:30 AEDT -> UTC 2026-11-21 23:30
+    const gcalUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=20261121T233000Z/20261122T123000Z&details=${details}&location=${location}`;
 
     // Also download .ics file
     const icsContent = [
@@ -105,8 +105,8 @@ function initCalendarEvent() {
       'BEGIN:VEVENT',
       'UID:' + Date.now() + '@kristianandhatha.wedding',
       'DTSTAMP:20260915T000000Z',
-      'DTSTART:20261121T213000Z',
-      'DTEND:20261122T103000Z',
+      'DTSTART:20261121T233000Z',
+      'DTEND:20261122T123000Z',
       'SUMMARY:Kristian & Hatha Wedding Celebration',
       'DESCRIPTION:Wedding of Kristian Joshua Emnas & Pich Hatha Van. Arrival 10:30 AM, Reception 5:30 PM.',
       'LOCATION:Jolly Seafood Restaurant, Christchurch, New Zealand',
